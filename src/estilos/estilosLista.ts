@@ -1,0 +1,48 @@
+import { StyleSheet } from 'react-native';
+import { cores } from './tema';
+
+export const estilosLista = StyleSheet.create({
+  linhaTopo: { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 },
+  botaoAdicionar: {
+    backgroundColor: cores.primaria,
+    borderRadius: 12,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    marginTop: 4,
+  },
+  textoAdicionar: { color: cores.branco, fontWeight: '800' },
+  lista: { gap: 10 },
+  cartaoCategoria: {
+    backgroundColor: cores.superficie,
+    borderWidth: 1,
+    borderColor: cores.borda,
+    borderRadius: 14,
+    padding: 14,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  info: { flex: 1 },
+  nome: { color: cores.texto, fontWeight: '800', fontSize: 16 },
+  tipo: { color: cores.suave, marginTop: 4, textTransform: 'capitalize' },
+  excluir: { color: cores.perigo, fontWeight: '800' },
+  editar: { color: cores.primaria, fontWeight: '800' },
+  cartaoMeta: {
+    backgroundColor: cores.superficie,
+    borderWidth: 1,
+    borderColor: cores.borda,
+    borderRadius: 16,
+    padding: 16,
+    gap: 10,
+  },
+  linhaMeta: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  tituloMeta: { color: cores.texto, fontSize: 17, fontWeight: '800' },
+  percentual: { color: cores.primaria, fontWeight: '900' },
+  valorMeta: { color: cores.suave },
+  trilha: { height: 10, backgroundColor: cores.campo, borderRadius: 999, overflow: 'hidden' },
+  progresso: { height: '100%', backgroundColor: cores.primaria, borderRadius: 999 },
+  prazo: { color: cores.suave, fontSize: 12 },
+  acoesMeta: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+  botaoProgresso: { backgroundColor: cores.campo, borderRadius: 10, paddingVertical: 9, paddingHorizontal: 12 },
+  textoProgresso: { color: cores.texto, fontWeight: '800' },
+  grupoAcoes: { flexDirection: 'row', gap: 16, alignItems: 'center' },
+});
